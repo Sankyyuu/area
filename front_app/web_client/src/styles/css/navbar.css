@@ -1,0 +1,27 @@
+
+.root {
+    flex-grow: 1;
+    margin: 0 0 92px 0;
+    text-align: left !important;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.avatar {
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.button {
+    background-color: #82a2ff !important;
+}
+
+.color {
+    background-image: linear-gradient(to right, #82a2ff, #303b8a);
+}
+
+.colorTitle {
+    color: #ffffff !important;
+}

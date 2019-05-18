@@ -1,0 +1,36 @@
+version: '3.5'
+
+services:
+
+  web_client:
+      container_name: web_client
+      build: ./front_app/web_client/
+      depends_on:
+          - mobile_client
+          - server
+      volumes:
+          - ./front_app/web_client/public/apk:/app/webapp
+      ports:
+          - '8081:8081'
+      environment:
+          - NODE_ENV=development
+          - CHOKIDAR_USEPOLLING=true
+
+  server:
+    container_name: server
+    build:
+       context: ./server
+       dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+
+  mobile_client:
+        container_name: mobile_client
+        build:
+          context: ./front_app/android_client
+          dockerfile: Dockerfile
+        ports:
+          - '19000:19000'
+          - '19001:19001'
+        volumes:
+          - ./front_app/web_client/public/apk:/app/webapp

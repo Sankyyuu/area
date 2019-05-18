@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AREA</string>
+    <string name="currency_symbol">\$</string>
+    <string name="category_title">Category:</string>
+    <string name="add_item_successful">You have successfully added an item!</string>
+    <string name="ok">OK</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="profile">Profile</string>
+
+    <string name="bundle_extra_item">ITEM</string>
+    <string name="transition_image">transition_image</string>
+    <string name="transition_title">transition_title</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_details">Details</string>
+    <string name="hint_add_item">Add Item</string>
+
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

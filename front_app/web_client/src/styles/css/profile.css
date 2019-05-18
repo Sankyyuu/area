@@ -1,0 +1,24 @@
+.profil_card {
+	max-width: 1000;
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+}
+.media {
+	height: 140;
+}
+.btns {
+	margin-top: 10% !important;
+}
+.btn {
+	margin-left: 37% !important;
+}
+.profil_avatar {
+	width: 6em !important;
+	height: auto !important;
+	margin-left: 40%;
+	border-radius: 50%;
+	border: outset;
+	margin-top: 10%;
+	margin-bottom: 7%;
+    }

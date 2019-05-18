@@ -1,0 +1,44 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+.title {
+    padding-bottom: 35px;
+}
+
+.card {
+    max-width: 345px;
+}
+
+.media {
+    height: 190px;
+}
+
+.image {
+    margin-top: 10%;
+    margin-bottom: 5%
+}
+
+.logout {
+    margin-right: 29% !important;
+}
+
+.login {
+    margin-right: 32% !important;
+}
+
+.activate {
+    margin-right: 31% !important;
+}
+
+.disable {
+    margin-right: 32% !important;
+}

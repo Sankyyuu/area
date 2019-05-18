@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFragment"
+    android:id="@+id/profileFragment" >
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        tools:ignore="HardcodedText"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/profileAvatarMod"
+        android:src="@drawable/default_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileAvatarMod"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Username: "
+            tools:ignore="HardcodedText"
+            android:gravity="end"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/usernameFieldMod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text=""
+            tools:ignore="HardcodedText"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameLayout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Email: "
+            tools:ignore="HardcodedText"
+            android:gravity="end"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/emailFieldMod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text=""
+            tools:ignore="HardcodedText"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLayout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Password: "
+            tools:ignore="HardcodedText"
+            android:gravity="end"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/passwordFieldMod"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text=""
+            tools:ignore="HardcodedText"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLayout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/passwordConfirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Confirm password: "
+            tools:ignore="HardcodedText"
+            android:gravity="end"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/passwordConfirmField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text=""
+            tools:ignore="HardcodedText"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/modifyButtonMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordConfirmLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60sp"
+        android:text="Modify"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/holo_blue_dark" />
+
+</RelativeLayout>
